@@ -96,3 +96,38 @@ main .movie-description {
 .btn-play i {
     margin-left: -1rem;
 }
+
+
+
+
+
+.suggestion-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestion-heading h2 {
+    font-size: .8rem;
+}
+.suggestion-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.suggestion-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    
+}
+.suggestion-item {
+    border: 1px solid black;
+    padding: .8rem;
+    justify-content: space-between;
+
+    
+}
+.suggestion-item a{
+display: inline-block;
+}
