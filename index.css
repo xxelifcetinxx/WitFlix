@@ -1,73 +1,85 @@
-body{
-   font-family: Helvetica,Arial, sans-serif;
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    min-width: 350px;
+
 }
 
-
-
-
+.logo {
+    color:red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: .5rem;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .logo {
-    font-size: 1.5rem;
-    color: red;
-    font-weight: bold;
-}
+
 header nav {
     display: flex;
-    gap: 0.5rem;
-    margin-right: 8rem;
+    gap: .5rem;
 }
-header nav a {
-    text-decoration: none;
-    color: gray;
-    justify-content: center;
 
+nav a {
+    text-decoration: none;
+    color: black;
 }
+
+nav a:hover {
+    color: red;
+}
+
 .user-controls {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
+
 .user-controls img {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
 }
-.input-icon{
-    margin-left: -1.5rem;
+
+.user-controls input {
+    background-image: url("magnifying-glass.png");
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position: 97%;
+    padding-right: 10%;
+    width: 60%;
 }
 
-
+.input-icon {
+    margin-left: -1.5rem
+}
 
 
 main {
     aspect-ratio: 5/3;
-    border: 1px solid black;
+    border: 1px solid red;
     display: flex;
     align-content: center;
     align-items: center;
     padding: 1rem;
 }
 
-main .movie-statistics{
+main .movie-statistics {
     display: flex;
-    gap: 2rem;
+    gap: .8rem;
     align-items: center;
+} 
 
-
-}
-.movie-rating i {
+main .movie-rating i {
     color: red;
 }
 
-main .age-rating {
+.age-rating {
     border: 1px solid black;
     border-radius: .25rem;
-    padding: 0.2rem;
+    padding: .2rem;
 }
 
 main .movie-description {
@@ -77,14 +89,16 @@ main .movie-description {
 .movie-details {
     margin-bottom: 2rem;
 }
+
 .movie-details p {
-    margin: .3rem 0;
+    margin: .3rem 0
 }
-.movie-details span{
+
+.movie-details span {
     color: red;
     font-weight: bold;
-
 }
+
 .btn-play {
     text-decoration: none;
     color: white;
@@ -98,36 +112,124 @@ main .movie-description {
 }
 
 
-
-
-
 .suggestion-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .suggestion-heading h2 {
-    font-size: .8rem;
+    font-size: 1rem;
 }
+
 .suggestion-heading a {
     text-decoration: none;
-    color: black;
+    color: black
 }
 
 .suggestion-container {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    
-    
+    overflow: auto;
+    padding-bottom: 1rem;
 }
+
 .suggestion-item {
     border: 1px solid black;
     padding: .8rem;
-    justify-content: space-between;
+    min-width: 180px;
+}
 
-    
+.suggestionn-movie-details {
+    display: flex;
+    gap: .8rem;
+    align-items: center;
+    margin-bottom: .8rem
 }
-.suggestion-item a{
-display: inline-block;
+.suggestion-item a {
+    display: inline-block;
 }
+
+.suggestion-item .btn-play {
+    padding: .5rem 1.5rem;
+    font-size: .9rem
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    gap: 2rem
+}
+
+footer h4 {
+    margin:0;
+    font-size: 1rem;
+}
+
+.footer-links {
+    width: 70%
+}
+
+footer nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.store-links {
+    flex-grow: 1;
+}
+
+.store-links a {
+    display: block;
+    aspect-ratio: 4.7/1.4;
+    width: 100px;
+    background-color: red;
+    background-image: url("apps.jpg.webp");
+    background-repeat: no-repeat;
+    margin: .5rem 0
+}
+
+.social-media {
+    display: flex;
+    gap: .2rem;
+    margin-top: 1rem;
+}
+
+.googlePlay {
+    background-position: -10px -9px;
+    background-size: 120px;
+}
+
+.appStore {
+    background-position: -10px -45px;
+    background-size: 120px;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 100%;
+        justify-content: center;
+        order:1;
+        margin: 0 0 1rem;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .store-links {
+        flex-grow: 0;
+    }
+}   
