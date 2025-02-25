@@ -47,9 +47,17 @@ main .movie-statistics{
 main .age-rating {
     border: 1px solid black;
     border-radius: 25rem;
-   padding: 0.2rem;
+    padding: 0.2rem;
 }
 
 main .movie-description {
     width: 60%;
+}
+
+.btn-play {
+    text-decoration: none;
+    color: white;
+    background: red;
+    padding: .5rem .3rem;
+    border-radius: .5rem;
 }
