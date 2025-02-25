@@ -1,0 +1,55 @@
+body{
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    gap: 0.5rem;
+}
+.user-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-controls img {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+main {
+    aspect-ratio: 5/3;
+    border: 1px solid black;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main .movie-statistics{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+
+}
+.movie-rating i {
+    color: red;
+}
+
+main .age-rating {
+    border: 1px solid black;
+    border-radius: 25rem;
+   padding: 0.2rem;
+}
+
+main .movie-description {
+    width: 60%;
+}
