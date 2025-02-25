@@ -1,6 +1,9 @@
 body{
-    font-family: Helvetica,Arial, sans-serif;
+   font-family: Helvetica,Arial, sans-serif;
 }
+
+
+
 
 
 header {
@@ -8,21 +11,38 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header .logo {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: bold;
+}
 header nav {
     display: flex;
     gap: 0.5rem;
+    margin-right: 8rem;
+}
+header nav a {
+    text-decoration: none;
+    color: gray;
+    justify-content: center;
+
 }
 .user-controls {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-
 .user-controls img {
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
 }
+.input-icon{
+    margin-left: -1.5rem;
+}
+
+
+
 
 main {
     aspect-ratio: 5/3;
@@ -46,7 +66,7 @@ main .movie-statistics{
 
 main .age-rating {
     border: 1px solid black;
-    border-radius: 25rem;
+    border-radius: .25rem;
     padding: 0.2rem;
 }
 
@@ -54,10 +74,25 @@ main .movie-description {
     width: 60%;
 }
 
+.movie-details {
+    margin-bottom: 2rem;
+}
+.movie-details p {
+    margin: .3rem 0;
+}
+.movie-details span{
+    color: red;
+    font-weight: bold;
+
+}
 .btn-play {
     text-decoration: none;
     color: white;
     background: red;
-    padding: .5rem .3rem;
+    padding: .8rem 3rem;
     border-radius: .5rem;
+}
+
+.btn-play i {
+    margin-left: -1rem;
 }
